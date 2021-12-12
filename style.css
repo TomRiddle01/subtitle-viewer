@@ -1,0 +1,48 @@
+body{
+    margin:0px;
+    color: #f5d67b;
+    background-color: #001628;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15;
+}
+#subtitles{
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    min-height: 500px;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.subtitle-row{
+    width: 100%;
+    pointer-events: none;
+}
+
+#subtitles-progress{
+    display: block;
+    position: absolute;
+    top: 0px;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    opacity: 0.15;
+}
+#subtitles .subtitle-row{
+    display: block;
+    position: absolute;
+    top: 0px;
+}
+#toolbar{
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    background-color: black;
+    opacity: 0.8;
+    padding: 8px;
+    border-radius: 10px;
+    height: 22px;
+    width: 600px;
+}

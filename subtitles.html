@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="subtitles.js"></script>
+	</head>
+	<body>
+		<div id="subtitles" >
+			<div id="subtitles-progress"></div>
+			<div id="subtitles-text">
+			</div>
+		</div>
+		<div id="toolbar">
+			<button onclick="jump();">jump</button>
+			<button onclick="addFontSize(1);">+</button>
+			<button onclick="addFontSize(-1);">-</button>
+			<input placeholder="set to..." style="width:100px;" onchange="jumpto(this.value);" />
+			<input type="file" accept=".srt" onchange="newSrtUpload(this);" />
+			<input type="checkbox" id="autoscroll" checked="checked"/> auto scroll
+		</div>
+	</body>
+</html>
