@@ -143,16 +143,9 @@ function updateProgress() {
             if (newHeight < document.body.scrollTop + document.body.clientHeight) {
                 if (+new Date > dontScrollUntil) {
                     if (document.body.scrollTop + document.body.clientHeight * 0.8 < newHeight) {
-                        window.scroll({
-                          top: newHeight - document.body.clientHeight * 0.8,
-                          left: 0, 
-                          behavior: 'smooth'
-                        });
-                        //window.scrollBy({
-                        //    top: 10, // could be negative value
-                        //    left: 0,
-                        //    behavior: 'smooth'
-                        //});
+                        
+						window.scrollTo(0, newHeight - document.body.clientHeight * 0.8)
+
                         lastAutoScroll = +new Date
                     }
                 }
