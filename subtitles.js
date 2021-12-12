@@ -41,7 +41,7 @@ window.onload = function () {
 
 function addFontSize(x){
     fontSize += x
-    document.body.style.fontSize = fontSize+"px";
+	document.querySelector("#subtitles").style.fontSize = fontSize+"px";
 }
 
 function preventDefaults(e) {
